@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Library</h1>   
+        <button class="open-modal-add">Add book</button>
+        <dialog class="modal-add" id="modal-add">
+            <form action="submit" method="dialog">
+                <label for="title-input">Title</label>
+                <input type="text" class="title-input" id="title-input" value="">
+                <label for="author-input">Author</label>
+                <input type="text" class="author-input" id="author-input" value="">
+                <label for="pages-input">Pages</label>
+                <input type="number" class="pages-input" id="pages-input" value="">
+                <label for="status-input">Have you read this book yet?</label>
+                <select name="status" id="status-input" class="status-input">
+                    <option value="Read">Yes</option>
+                    <option value="Not Read">No</option>
+                </select>
+                <button class="add-book" value="add-book">Add</button>
+            </form>
+        </dialog>
+    </div>
+    <main> 
+        <div class="book-card-container"></div>
+    </main>
+</body>
+</html>
